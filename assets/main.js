@@ -7,9 +7,11 @@ function generaBiglietto(){
 
     
     
+    
     if (valueage <= 18) {
         price = price * 0.8;
         console.log('minorenne')
+
     } else if (valueage >= 65){
         price = price * 0.6;
         console.log('over65')
@@ -26,12 +28,12 @@ function generaBiglietto(){
     document.getElementById('nome').innerHTML = `${name}`
 
     //carrozza
-    let carrozza = Math.floor(Math.random() * 8) +1;
+    let carrozza = Math.floor(Math.random() * 9) +1;
 
     document.getElementById('carrozza').innerHTML = `${carrozza}`
 
     //CPcode
-    let CPcode = Math.floor(Math.random() * 9999) +1;
+    let CPcode = Math.floor(Math.random() * 9999) +1000;
 
     document.getElementById('CPcode').innerHTML = `${CPcode}`
 
