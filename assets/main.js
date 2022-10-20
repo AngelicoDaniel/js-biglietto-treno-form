@@ -4,7 +4,6 @@ function generaBiglietto(){
     let valueKm = document.getElementById('km').value;
     let valueage = document.getElementById('age').value;
     let price = valueKm * MoneyPerKm;
-    let name = document.getElementById('name');
 
     
     
@@ -20,18 +19,14 @@ function generaBiglietto(){
     }
     
     document.getElementById('finalPrice').innerHTML = `il prezzo finale è: ${price.toFixed(2)}`
-    document.getElementById('name').innerHTML = `${name}`
+
+    //nome e cognome
+    let name = document.getElementById('name').value;
+
+    document.getElementById('nome').innerHTML = `${name}`
+   
+    
 
     }
 
     
-
-    // let carrozza = document.getElementById('generaPrezzo')
-    
-    // document.addEventListener('click', function()  {
-    //     alert( generaNumeroRandom(1, 8) );
-    // })
-
-    // function generaNumeroRandom(min, max){
-    //     return Math.floor(Math.random() * max) + min;
-    // }
