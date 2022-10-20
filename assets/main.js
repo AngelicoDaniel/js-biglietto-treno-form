@@ -31,7 +31,9 @@ function generaBiglietto(){
     document.getElementById('carrozza').innerHTML = `${carrozza}`
 
     //CPcode
+    let CPcode = Math.floor(Math.random() * 9999) +1;
 
+    document.getElementById('CPcode').innerHTML = `${CPcode}`
 
     }
 
