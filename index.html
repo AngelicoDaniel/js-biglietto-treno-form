@@ -9,16 +9,19 @@
 </head>
 <body>
     <form action="">
+        <input type="text" id="name" placeholder="nome e cognome"> 
         <input type="text" id="km" placeholder="distanza da percorrere"> 
-        <input type="text" id="age" placeholder="quanti anni hai?">
-        <div class="dropdown">
-        <button onclick="generaPrezzo();return false">Genera Prezzo</button>
+        <input type="text" id="age" placeholder="anni">
+        <button onclick="generaBiglietto();return false">Genera</button>
         
     </form>
 
 
 
-     <h2 id="finalPrice"></h2>
+     <div id="name"></div>   
+     <div id="carrozza"></div>
+     <div id="CPcode"></div>
+     <div id="finalPrice"></div>
      
     <script src="assets/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
