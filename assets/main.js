@@ -20,7 +20,7 @@ function generaBiglietto(){
         console.log('default')
     }
     
-    document.getElementById('finalPrice').innerHTML = `il prezzo finale è: ${price.toFixed(2)}`
+    document.getElementById('finalPrice').innerHTML = ` ${price.toFixed(2)} €`
 
     //nome e cognome
     let name = document.getElementById('name').value;

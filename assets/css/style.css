@@ -2,3 +2,7 @@
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
 }
+
+input, button {
+    border: 1px solid red;
+}
