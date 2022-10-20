@@ -24,8 +24,14 @@ function generaBiglietto(){
     let name = document.getElementById('name').value;
 
     document.getElementById('nome').innerHTML = `${name}`
-   
-    
+
+    //carrozza
+    let carrozza = Math.floor(Math.random() * 8) +1;
+
+    document.getElementById('carrozza').innerHTML = `${carrozza}`
+
+    //CPcode
+
 
     }
 
