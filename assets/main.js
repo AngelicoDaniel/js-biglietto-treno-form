@@ -1,30 +1,30 @@
 function generaBiglietto(){
 
     const MoneyPerKm = '0.21';
+    let name = document.getElementById('name').value;
     let valueKm = document.getElementById('km').value;
     let valueage = document.getElementById('age').value;
     let price = valueKm * MoneyPerKm;
-
     
     
     
-    if (valueage <= 18) {
+    
+    if (valueage == 'minorenne') {
         price = price * 0.8;
         console.log('minorenne')
 
-    } else if (valueage >= 65){
+    } else if ( valueage == 'over65'){
         price = price * 0.6;
         console.log('over65')
     } else {
         finalPrice = price
-        console.log('default')
+        console.log('maggiorenne')
     }
     
     document.getElementById('finalPrice').innerHTML = ` ${price.toFixed(2)} €`
 
     //nome e cognome
-    let name = document.getElementById('name').value;
-
+    
     document.getElementById('nome').innerHTML = `${name}`
 
     //carrozza
