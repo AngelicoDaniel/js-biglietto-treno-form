@@ -29,13 +29,11 @@
                     <option value="minorenne">Minorenne</option>
                     <option value="over65">Over 65</option>
                     </select>
-
-                <!-- <input type="text" id="age" placeholder="quanti anni hai?"> -->
                 </div>
             </div>
             <div>
-            <button onclick="generaBiglietto();return false">Genera</button>  
-            <input type="reset"></input>
+            <button class="m-5" onclick="generaBiglietto();return false">Genera</button>  
+            <button onclick="ticketReset()" value="reset">Annulla</button>
             </div>   
         </form>
     </section>
@@ -43,6 +41,8 @@
     <h1 class="text-white text-center my-5">IL TUO BIGLIETTO</h1>
     <section class="container m-auto bg-light p-5">
         <h2 class="m-2">DETTAGLIO PASSEGGERI</h2>
+        <div id="result">
+
         <div class="row cols-5 box">
             
             <div class="col-3 bg-secondary py-5 mx-0">
@@ -65,7 +65,7 @@
                 <h4 class="py-4">Costo Biglietto</h4>
                 <div id="finalPrice"></div> 
             </div>
-
+        </div>
             
             
             

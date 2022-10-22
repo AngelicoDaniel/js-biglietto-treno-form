@@ -5,9 +5,7 @@ function generaBiglietto(){
     let valueKm = document.getElementById('km').value;
     let valueage = document.getElementById('age').value;
     let price = valueKm * MoneyPerKm;
-    
-    
-    
+       
     
     if (valueage == 'minorenne') {
         price = price * 0.8;
@@ -39,4 +37,6 @@ function generaBiglietto(){
 
     }
 
-    
+function ticketReset(){
+    document.getElementById('result').value = ''
+    }
